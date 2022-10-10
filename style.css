@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    border: 1px solid red;
+    padding: 5px;
+}
+
+header {
+    display: flex;
+}
+
+.header-left, .header-right {
+    display: flex;
+    flex: 1;
+}
+
+.header-left {
+    justify-content: left;
+}
+
+.header-right {
+    justify-content: right;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+section, aside {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    word-break: break-all;
+}
+
+.home-aside-left {
+    width: 80%;
+}
+
+.home-section {
+    width: 80%;
+}
+
+.home-aside-right {
+    width: 80%;
+}
+
+footer {
+    text-align: center;
+}
