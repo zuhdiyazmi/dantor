@@ -4,12 +4,23 @@ body {
 }
 
 div {
-    border: 1px solid red;
-    padding: 5px;
+    /* border: 1px solid red; */
+    /* padding: 5px; */
 }
 
 header {
+    padding: 0 50px;
     display: flex;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+header a {
+    display: flex;
+    padding: 10px 30px;
+}
+
+header a:hover {
+    background-color: aqua;
 }
 
 .header-left, .header-right {
@@ -23,13 +34,21 @@ header {
 
 .header-right {
     justify-content: right;
-    gap: 30px;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+nav a {
+    display: flex;
+    padding: 10px 30px;
+}
+
+nav a:hover {
+    background-color: aqua;
 }
 
 section, aside {
@@ -39,18 +58,32 @@ section, aside {
     word-break: break-all;
 }
 
-.home-aside-left {
-    width: 80%;
+.sect {
+    /* padding: 30px 0; */
+    background-color: lightyellow;
+    gap: 20px;
+    padding: 20px 50px;
 }
 
-.home-section {
-    width: 80%;
+.sect a {
+    background-color: aqua;
+    display: inline-block;
+    padding: 10px;
 }
 
-.home-aside-right {
-    width: 80%;
+.home-aside-left, .home-section, .home-aside-right {
+    /* width: 85%; */
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 20px 15px;
+}
+
+.home-aside-left p, .home-section p, .home-aside-right p {
+    text-align: left;
 }
 
 footer {
+    background-color: aqua;
     text-align: center;
 }
