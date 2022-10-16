@@ -1,89 +1,105 @@
-body {
-    padding: 0;
-    margin: 0;
+html {
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
 }
 
-div {
-    /* border: 1px solid red; */
-    /* padding: 5px; */
+body {
+    max-width: 1366px;
+    margin: 0;
+    padding: 10px;
+    /* background-color: yellow; */
+    border: 1px solid pink;
 }
 
 header {
-    padding: 0 50px;
-    display: flex;
-    border-bottom: 1px solid rgb(221, 221, 221);
+    /* background-color: lightblue; */
 }
 
-header a {
+section {}
+
+header {
     display: flex;
-    padding: 10px 30px;
 }
 
-header a:hover {
-    background-color: aqua;
-}
-
-.header-left, .header-right {
-    display: flex;
+header div, header nav {
     flex: 1;
-}
-
-.header-left {
-    justify-content: left;
-}
-
-.header-right {
-    justify-content: right;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid rgb(221, 221, 221);
-}
-
-nav a {
-    display: flex;
-    padding: 10px 30px;
-}
-
-nav a:hover {
-    background-color: aqua;
-}
-
-section, aside {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    word-break: break-all;
-}
-
-.sect {
-    /* padding: 30px 0; */
-    background-color: lightyellow;
-    gap: 20px;
-    padding: 20px 50px;
-}
-
-.sect a {
-    background-color: aqua;
-    display: inline-block;
+    border: 1px solid red;
     padding: 10px;
 }
 
-.home-aside-left, .home-section, .home-aside-right {
-    /* width: 85%; */
-    text-align: center;
-    background-color: white;
-    border: 1px solid rgb(221, 221, 221);
-    padding: 20px 15px;
+.left-header {
+    display: flex;
 }
 
-.home-aside-left p, .home-section p, .home-aside-right p {
-    text-align: left;
+.header-image {
+    display: flex;
+    align-items: center;
 }
 
-footer {
-    background-color: aqua;
+.header-brand {
+    font-size: 40px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+section {
+    display: flex;
+}
+
+section div, section nav {
+    border: 1px solid green;
+    padding: 10px;
+}
+
+.right-section {
+    width: 85%;
+}
+
+.right-section-bottom {
+    display: flex;
+}
+
+.right-section div {
+    flex: 1;
+}
+
+.right-section-bottom-left div, .right-section-bottom-right div {
+    margin-bottom: 10px;
+}
+
+.right-section-bottom-left div:last-child, .right-section-bottom-right div:last-child {
+    margin-bottom: 0px;
+}
+
+.left-section {
+    width: 15%;
+}
+
+.section-nav {
+    display: grid;
+    gap: 10px;
+}
+
+.section-nav a {
+    margin-right: auto;
+    /* mantap */
+}
+
+.right-section {
+    word-break: break-all;
+}
+
+footer div {
+    border: 1px solid orange;
+    padding: 100px;
     text-align: center;
+}
+
+body, body div, body nav {
+    border: 1px solid black;
+    background-color: lightyellow;
 }
